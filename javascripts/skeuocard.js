@@ -1225,6 +1225,8 @@
       year = this.getRawValue('y');
       if (month === 0 || year === 0) {
         this.date = null;
+      } else if (month > 12) {
+        this.date = new Date(1900,1,1);
       } else {
         if (year < 2000) {
           year += 2000;
