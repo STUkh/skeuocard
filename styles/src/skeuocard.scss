@@ -173,6 +173,32 @@ $color-valid: #00CFA7;
     }
   }
 
+  @media screen and (max-width: 411px) {
+    width: 280px;
+
+    .card-body .face {
+      width: 100%;
+    }
+
+    .card-body.flip .face {
+      background-size: 115% auto;
+
+      .cc-cvc {
+        top: 6.6em;
+        left: 16.3em;
+      }
+    }
+
+    .cc-number {
+      left: 0;
+
+      input {
+        width: 14em;
+        font-size: 1.3em;
+      }
+    }
+  }
+
 }
 
 @import "_cards";
